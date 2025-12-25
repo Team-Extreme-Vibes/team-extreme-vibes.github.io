@@ -1,0 +1,45 @@
+body {
+  background-color: #000000;
+  margin: 0;
+}
+
+/* 2. 创建一个虚假的固定背景层 */
+body::before {
+  content: "";
+  position: fixed; /* 替代 fixed attachment */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2; /* 放在最底层 */
+  background-image: url('/back2.webp');
+  background-size: cover;
+  background-position: center;
+  will-change: transform; /* 强制开启 GPU 硬件加速 */
+}
+
+/* 3. 把随页面滚动的 back.png 放在另一个层 */
+body::after {
+  content: "";
+  position: absolute; /* 随页面滚动 */
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100vh; /* 或者你需要的具体高度 */
+  z-index: -1; 
+  background-image: 
+    url('/back.png');
+  background-repeat: no-repeat;
+  background-size: 30% auto;
+  background-position: top center;
+  pointer-events: none; /* 确保不阻碍鼠标点击 */
+}
+
+.VPNavBar .logo {
+  height: 40px; /* 默认通常是 24px 或 32px，你可以根据需要调大 */
+  width: auto;  /* 保持比例 */
+  
+  /* 如果你想微调 Logo 和文字之间的垂直对齐 */
+  vertical-align: middle; 
+}

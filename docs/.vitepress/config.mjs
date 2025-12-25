@@ -4,9 +4,11 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Team Extreme Vibes",
   description: "Team Extreme Vibes",
+  appearance: 'force-dark',
   head: [['link', { rel: 'icon', href: '/logo.png' }]],
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
+    logo: '/back.png', 
+    siteTitle: false, 
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Team', link: '/team' },

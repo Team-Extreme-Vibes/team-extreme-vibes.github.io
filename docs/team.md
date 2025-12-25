@@ -19,11 +19,38 @@ const members = [
       { icon: 'x', link: 'https://x.com/Binnnnn0708' },
     ]
   },
+  {
+    avatar: 'https://pbs.twimg.com/profile_images/1955991793482498048/xt_QZmua_400x400.jpg',
+    name: 'binn_rc',
+    title: 'Binn Zhang',
+    links: [
+      { icon: 'instagram', link: 'https://www.instagram.com/binn_rc' },
+      { icon: 'x', link: 'https://x.com/Binnnnn0708' },
+    ]
+  },
+  {
+    avatar: 'https://pbs.twimg.com/profile_images/1955991793482498048/xt_QZmua_400x400.jpg',
+    name: 'binn_rc',
+    title: 'Binn Zhang',
+    links: [
+      { icon: 'instagram', link: 'https://www.instagram.com/binn_rc' },
+      { icon: 'x', link: 'https://x.com/Binnnnn0708' },
+    ]
+  },
+  {
+    avatar: 'https://pbs.twimg.com/profile_images/1955991793482498048/xt_QZmua_400x400.jpg',
+    name: 'binn_rc',
+    title: 'Binn Zhang',
+    links: [
+      { icon: 'instagram', link: 'https://www.instagram.com/binn_rc' },
+      { icon: 'x', link: 'https://x.com/Binnnnn0708' },
+    ]
+  },
 ]
 </script>
 
 <VPTeamPage>
-  <VPTeamPageTitle>
+  <VPTeamPageTitle style="margin-top: 200px">
     <template #title>
       Our Team
     </template>
